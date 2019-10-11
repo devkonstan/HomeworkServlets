@@ -1,0 +1,46 @@
+1. Napisz serwlet który bêdzie zapisywaæ operacje bankowe przeprowadzone na koncie, tzn. wp³ywy i wyp³ywy.
+Ka¿da wp³ata i wyp³ata powinna zawieraæ kwotê, datê i nazwê transakcji. W tym celu przygotuj formularz
+odpowiedzialny za realizacjê operacji w banku oraz serwlet z metod¹ doPost i metod¹ doGet.
+-wplywy na +
+-wyplywy na -
+-bilans konta
+
+2. Napisz walidator adresu email, kodu pocztowego, numeru telefonu:
+- sprawdzanie poprawnoœci podanego maila
+- sprawdzanie podanego kodu pocztowego
+- sprawdzanie poprawnoœci numeru telefonu, zak³adamy, ¿e numer zaczyna siê od +48 oraz zawiera potem 9 cyfr
+
+
+
+3. Napisz konwerter dowolnego tekstu podanego z wykorzystaniem kodowania Base64, na wyjœciu powinien siê pojawiæ zakodowany tekst
+* zmodyfikuj serwlet tak by dawa³ mo¿liwoœæ wyboru pomiêdzy kodowaniem i dekodowaniem
+
+
+
+4. Napisz generator plików typu json. Serwlet w metodzie doGet powinien przyjmowaæ parametry ¿¹dania typu:
+
+- user_id,
+
+- user_name,
+
+- user_last_name,
+
+- user_age
+
+Na wyjœciu powinien pojawiæ siê json wynikowy:
+{
+	“user_id”:345,
+	“user_name”:”Piotr”,
+	“user_last_name”:”Brzozowski”,
+	“user_age”:22
+
+5. Napisz serwlet który bêdzie zapisywaæ oceny studenta z danego przedmiotu.
+Ka¿da ocena powinna byæ przypisywana do poszczególnego przedmiotu.
+W tym celu przygotuj formularz umo¿liwiaj¹cy wprowadzanie oceny z przedmiotu.
+*wykorzystaj strukturê Map<Subject, Result>
+
+
+6. Napisz aplikacjê która bêdzie przechowywaæ datê urodzenia u¿ytkownika wskazan¹ w formularzu. W tym celu:
+
+- napisz formularz który bêdzie dawa³ mo¿liwoœæ wyboru daty urodzenia
+- napisz serwlet który bêdzie wyœwietla³ datê wskazan¹ w sesji

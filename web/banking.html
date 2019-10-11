@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <H1 ALIGN="CENTER">Lista transakcji</H1>
+    <FORM ACTION="http://localhost:8080/addTransaction"
+          METHOD="POST">
+
+        Kwota:
+        <INPUT TYPE="TEXT" NAME="amount"><BR>
+
+        Data w formacie dd/mm/yyyy:
+        <INPUT TYPE="TEXT" NAME="date"><BR>
+
+        Tytul transakcji:
+        <INPUT TYPE="TEXT" NAME="title"><BR>
+
+        Typ transakcji
+        <select name="type">
+            <option value="out">wychodzaca</option>
+            <option value="in">przychodzaca</option>
+        </select>
+
+        <INPUT TYPE="SUBMIT" VALUE="Wyslij">
+
+    </FORM>
+</html>
